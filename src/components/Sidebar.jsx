@@ -1,4 +1,6 @@
 import { FileArrowUp } from "phosphor-react";
+import { Avatar } from "./Avatar";
+
 import styles from "./Sidebar.module.css";
 
 export function Sidebar() {
@@ -6,18 +8,14 @@ export function Sidebar() {
         <aside className={styles.sidebar}>
             <img
                 className={styles.cover}
-                src="https://images.pexels.com/photos/8866719/pexels-photo-8866719.jpeg?auto=compress&cs=tinysrgb&w=500&h=750&dpr=1"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFYuVKP_8UvQlCOp0loYouFG2_DCYFbFzog&s"
             />
 
             <div className={styles.profile}>
-                <img
-                    className={styles.avatar}
-                    src="https://github.com/crisleyhguimaraes.png"
-                    alt="imagem de perfil do usuario"
-                />
+                <Avatar src="https://www.tabletowo.pl/wp-content/uploads/2020/10/Baby-Yoda-w-Star-Wars-Squadrons-1.jpg" />
 
-                <strong>Crisley Guimarães</strong>
-                <span>Analista de Suporte</span>
+                <strong>Nome do usuario</strong>
+                <span>Cargo do usuario</span>
             </div>
 
             <footer>
