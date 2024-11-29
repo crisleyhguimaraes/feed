@@ -1,6 +1,6 @@
 import styles from "./Comment.module.css";
 
-import { ThumbsUp, Trash } from "phosphor-react";
+import { Handshake, Trash } from "phosphor-react";
 import { Avatar } from "./Avatar";
 
 export function Comment() {
@@ -8,7 +8,7 @@ export function Comment() {
         <div className={styles.comment}>
             <Avatar
                 hasBorder={false}
-                src="https://ew.com/thmb/9I_8yGnmGaPQa4JXeI3oNTrsy-c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Screen-Shot-2020-11-27-at-2.19.27-AM-50df3ae8a81b4632b9b4ea4b80fc8bd8.png"
+                src="https://img.odcdn.com.br/cdn-cgi/image/width=1200,height=1200,fit=cover/wp-content/uploads/2020/09/20200915124507.jpg"
                 alt=""
             />
 
@@ -16,7 +16,7 @@ export function Comment() {
                 <div className={styles.commentContent}>
                     <header>
                         <div className={styles.authorAndTime}>
-                            <strong>Ahsoka</strong>
+                            <strong>Mandalorian</strong>
                             <time
                                 title="11 de Maio às 08:13h"
                                 dateTime="2022-05-11 08:13:00"
@@ -26,17 +26,20 @@ export function Comment() {
                         </div>
 
                         <button title="Deletar comentário">
-                            <Trash size={24} />
+                            <Trash size={20} />
                         </button>
                     </header>
 
-                    <p>Muito bom Devon, parabéns!! 👏👏</p>
+                    <p>
+                        Tela azul, hein? Aposto que você apertou mais botões do
+                        que devia. Não mexa em nada, estou a caminho. -Mando
+                    </p>
                 </div>
 
                 <footer>
                     <button>
-                        <ThumbsUp />
-                        Aplaudir <span>20</span>
+                        <Handshake />
+                        This is the way!<span>20</span>
                     </button>
                 </footer>
             </div>

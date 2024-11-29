@@ -12,10 +12,10 @@ export function Sidebar() {
             />
 
             <div className={styles.profile}>
-                <Avatar src="https://www.tabletowo.pl/wp-content/uploads/2020/10/Baby-Yoda-w-Star-Wars-Squadrons-1.jpg" />
+                <Avatar src="https://sm.ign.com/ign_br/screenshot/default/mandalorian-rosario-darwson-ahsoka-tano_cxcn.jpg" />
 
-                <strong>Nome do usuario</strong>
-                <span>Cargo do usuario</span>
+                <strong>Ahsoka</strong>
+                <span>Jedi</span>
             </div>
 
             <footer>

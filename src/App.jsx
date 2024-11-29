@@ -20,30 +20,11 @@ const posts = [
             {
                 type: "paragraph",
                 content:
-                    "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+                    "A tela do meu PC ficou toda azul... acho que fiz algo errado! Só tava tentando apertar os botões certos. Alguém sabe como arrumar isso? 🆘",
             },
-            { type: "link", content: "jane.design/doctorcare" },
+            { type: "link", content: "Gogu - The Mandalorian" },
         ],
         publishedAt: new Date("2022-05-03 20:00:00"),
-    },
-    {
-        id: 2,
-        author: {
-            avatarUrl:
-                "https://ew.com/thmb/9I_8yGnmGaPQa4JXeI3oNTrsy-c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Screen-Shot-2020-11-27-at-2.19.27-AM-50df3ae8a81b4632b9b4ea4b80fc8bd8.png",
-            name: "Ahsoka",
-            role: "Jedi",
-        },
-        content: [
-            { type: "paragraph", content: "Fala galera 👋" },
-            {
-                type: "paragraph",
-                content:
-                    "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
-            },
-            { type: "link", content: "jane.design/doctorcare" },
-        ],
-        publishedAt: new Date("2022-05-10 20:00:00"),
     },
 ];
 

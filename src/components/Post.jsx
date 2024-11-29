@@ -10,10 +10,10 @@ export function Post(props) {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src="https://img.odcdn.com.br/cdn-cgi/image/width=1200,height=1200,fit=cover/wp-content/uploads/2020/09/20200915124507.jpg" />
+                    <Avatar src="https://www.tabletowo.pl/wp-content/uploads/2020/10/Baby-Yoda-w-Star-Wars-Squadrons-1.jpg" />
                     <div className={styles.authorInfo}>
-                        <strong>Nome do autor</strong>
-                        <span>Cargo do autor</span>
+                        <strong>Baby Yoda</strong>
+                        <span>Tridactyls</span>
                     </div>
                 </div>
 
@@ -28,16 +28,16 @@ export function Post(props) {
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
                 <p>
-                    Acabei de subir mais um projeto no meu portifa. É um projeto
-                    que fiz no NLW Return, evento da Rocketseat. O nome do
-                    projeto é DoctorCare 🚀
+                    A tela do meu PC ficou toda azul... acho que fiz algo
+                    errado! Só tava tentando apertar os botões certos. Alguém
+                    sabe como arrumar isso? 🆘
                 </p>
                 <p>
-                    <a href="">jane.design/doctorcare</a>
+                    <a href="">Gogu - The Mandalorian</a>
                 </p>
                 <p>
-                    <a href="">#novoprojeto</a> <a href="">#nlw</a>{" "}
-                    <a href="">#rocketseat</a>
+                    <a href="">#força</a> <a href="">#starwars</a>{" "}
+                    <a href="">#mandalorian</a>
                 </p>
             </div>
 
@@ -52,8 +52,6 @@ export function Post(props) {
             </form>
 
             <div className={styles.commentList}>
-                <Comment />
-                <Comment />
                 <Comment />
             </div>
         </article>
