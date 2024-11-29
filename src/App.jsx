@@ -13,7 +13,7 @@ const posts = [
             avatarUrl:
                 "https://www.tabletowo.pl/wp-content/uploads/2020/10/Baby-Yoda-w-Star-Wars-Squadrons-1.jpg",
             name: "Baby Yoda",
-            role: "Tridactyls @Star Wars",
+            role: "Tridactyls",
         },
         content: [
             { type: "paragraph", content: "Fala galera 👋" },
@@ -25,6 +25,25 @@ const posts = [
             { type: "link", content: "Gogu - The Mandalorian" },
         ],
         publishedAt: new Date("2022-05-03 20:00:00"),
+    },
+    {
+        id: 2,
+        author: {
+            avatarUrl:
+                "https://criticalhits.com.br/wp-content/uploads/2022/11/The-Mandalorian-personagens-6-910x512.jpg",
+            name: "Boba Fett",
+            role: "Caçador de recompensas",
+        },
+        content: [
+            { type: "paragraph", content: "Saudações" },
+            {
+                type: "paragraph",
+                content:
+                    "Os caçadores de recompensas não precisam de desculpas. Concluí mais uma missão, mas o equipamento de rastreamento falhou no final. Alguém mais já passou por isso? Rastrear é fácil, mas manter tudo em funcionamento... nem tanto.",
+            },
+            { type: "link", content: "Boba Fett - The Mandalorian" },
+        ],
+        publishedAt: new Date("2022-05-10 20:00:00"),
     },
 ];
 
@@ -39,6 +58,7 @@ export function App() {
                     {posts.map((post) => {
                         return (
                             <Post
+                                key={post.id}
                                 author={post.author}
                                 content={post.content}
                                 publishedAt={post.publishedAt}

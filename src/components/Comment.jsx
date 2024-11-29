@@ -2,8 +2,19 @@ import styles from "./Comment.module.css";
 
 import { Handshake, Trash } from "phosphor-react";
 import { Avatar } from "./Avatar";
+import { useState } from "react";
 
-export function Comment() {
+export function Comment({ content, onDeleteComment }) {
+    const [likeCount, setLikeCount] = useState(0);
+
+    function handleDeleteComment() {
+        onDeleteComment(content);
+    }
+
+    function handleLikeComment() {
+        setLikeCount(likeCount + 1);
+    }
+
     return (
         <div className={styles.comment}>
             <Avatar
@@ -25,21 +36,21 @@ export function Comment() {
                             </time>
                         </div>
 
-                        <button title="Deletar comentário">
-                            <Trash size={20} />
+                        <button
+                            onClick={handleDeleteComment}
+                            title="Deletar comentário"
+                        >
+                            <Trash size={14} />
                         </button>
                     </header>
 
-                    <p>
-                        Tela azul, hein? Aposto que você apertou mais botões do
-                        que devia. Não mexa em nada, estou a caminho. -Mando
-                    </p>
+                    <p>{content}</p>
                 </div>
 
                 <footer>
-                    <button>
+                    <button onClick={handleLikeComment}>
                         <Handshake />
-                        This is the way!<span>20</span>
+                        This is the way!<span>{likeCount}</span>
                     </button>
                 </footer>
             </div>
